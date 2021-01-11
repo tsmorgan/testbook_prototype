@@ -1,0 +1,44 @@
+
+{% extends "layout.html" %}
+
+{% set serviceName = "Get a coronavirus test (prototype)" %}
+
+{% block pageTitle %}
+  Get a coronavirus test
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag" style="background-color:#d4351c">
+      PROTOTYPE
+    </strong>
+    <span class="govuk-phase-banner__text new">
+      This is a <a href="https://en.wikipedia.org/wiki/Prototype">prototype</a>, not a real service. This page is for testing purposes only. (<a href="https://www.gov.uk/service-manual/design/making-prototypes">Why use prototypes?</a>)
+    </span>
+  </p>
+</div>
+  {% block tomBread %}
+  <div class="govuk-breadcrumbs ">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Coronavirus (COVID-19)</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Testing for coronavirus (COVID-19)</a>
+      </li>
+    </ol>
+  </div>
+  {% endblock %}
+{% endblock %}
+
+{% block pageScripts %}
+<script type="text/javascript">
+    $(window).on("keypress", function(e) {
+      if (e.charCode == 114) $('.new').toggleClass('red');
+    });
+</script>
+{% endblock %}

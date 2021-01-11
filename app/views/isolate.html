@@ -1,0 +1,32 @@
+
+{% extends "_BASE.html" %}
+
+{% block tomBread %}
+<a href="javascript:window.history.back()" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-xl"> Stay at home </h1>
+        <p class="govuk-body">Based on your answers you should be self-isolating. That means you must not leave your home.</p>
+
+        <h2 class="govuk-heading-m">How to self-isolate</h2>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>do not go to work, school or any public places</li>
+          <li>do not go on public transport or use taxis</li>
+          <li>do not go out to get food and medicine – order it online or by phone, or ask someone to bring it to your home</li>
+          <li>do not have visitors in your home, including friends and family – except for people providing essential care</li>
+          <li>do not go out to exercise – exercise at home or in your garden, if you have one</li>
+        </ul>
+
+        <p>There is <a href="#">support available to help you self-isolate</a>.</p>
+
+        <a href="#" type="submit" class="govuk-!-margin-top-4 govuk-button"> Continue booking a test</a>
+
+    </div><!-- /govuk-grid-column-two-thirds -->
+  </div>
+
+{% endblock %}
