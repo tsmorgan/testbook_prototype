@@ -1,0 +1,41 @@
+
+{% extends "../_BASE.html" %}
+
+{% block tomBread %}
+<a href="javascript:window.history.back()" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-xl"> Stay at home </h1>
+        <p class="govuk-body">Based on your answers you should self-isolate for 10 days from the day your symptoms started.</p>
+        <p class="govuk-body">Self-isolation is when you don't leave your home because you have or might have coronavirus.</p>
+        <p class="govuk-body">This helps stop the virus speading to other people.</p>
+        <p class="govuk-body">Self-isolation is different to:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>social distancing &mdash; advice for everyone to avoid close contact with other people</li>
+          <li>sheilding &mdash; advice for people at high risk from coronavirus</li>
+        </ul>
+
+        <h2 class="govuk-heading-m">How to self-isolate</h2>
+        <p class="govuk-body">You must not leave your home if you are self-isolating</p>
+        <p class="govuk-body">Don't:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>go to work, school or any public places - work from home if you can</li>
+          <li>go out to get food and medicine – order it online or by phone, or ask someone to bring it to your home</li>
+          <li>have visitors in your home, including friends and family – except for people providing essential care</li>
+          <li>go on public transport or use taxis</li>
+          <li>go out to exercise – exercise at home or in your garden, if you have one</li>
+        </ul>
+
+        <p>There's <a href="#">support available to help you self-isolate</a>.</p>
+
+        <a href="#" type="submit" class="govuk-!-margin-top-4 govuk-button"> Continue booking a test</a>
+
+    </div><!-- /govuk-grid-column-two-thirds -->
+  </div>
+
+{% endblock %}
