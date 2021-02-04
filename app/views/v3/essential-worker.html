@@ -1,0 +1,41 @@
+
+{% extends "../_BASE.html" %}
+
+{% block tomBread %}{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl"> Is the person who needs a test an essential worker? </h1>
+
+      <p class="govuk-body"> Essential workers include NHS staff, teachers and transport staff. Check the <a href="https://www.gov.uk/guidance/coronavirus-covid-19-getting-tested#list-of-essential-workers-and-those-prioritised-for-testing-england-only" target="_blank" rel="noopener noreferrer" class="govuk-link"> full list of essential workers on GOV.UK </a>. </p>
+
+      <form>
+        <div class="govuk-!-margin-bottom-3">
+          <div class="govuk-form-group">
+            <fieldset role="group" class="govuk-fieldset"><!----><!---->
+              <div data-v-691518ca="" class="govuk-radios"><!---->
+                <div data-v-691518ca="" class="govuk-radios__item">
+                  <input data-v-691518ca="" type="radio" id="essential-worker" name="essentialWorker" class="govuk-radios__input" value="yes">
+                  <label data-v-691518ca="" for="essential-worker" class="govuk-label govuk-radios__label"> Yes </label>
+                </div><!---->
+                <div data-v-691518ca="" class="govuk-radios__item">
+                  <input data-v-691518ca="" type="radio" id="essential-worker-2" name="essentialWorker" class="govuk-radios__input" value="no">
+                  <label data-v-691518ca="" for="essential-worker-2" class="govuk-label govuk-radios__label"> No </label>
+                </div><!---->
+                <div data-v-691518ca="" class="govuk-radios__item">
+                  <input data-v-691518ca="" type="radio" id="essential-worker-3" name="essentialWorker" class="govuk-radios__input" value="don't know">
+                  <label data-v-691518ca="" for="essential-worker-3" class="govuk-label govuk-radios__label"> I don't know </label>
+                  </div>
+                </div>
+            </fieldset>
+          </div>
+        </div>
+        <a href="condition" type="submit" class="govuk-!-margin-top-4 govuk-button"> Continue </a>
+      </form>
+    </div><!-- /govuk-grid-column-two-thirds -->
+  </div>
+
+{% endblock %}
